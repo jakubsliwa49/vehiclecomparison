@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="vc.css"/>
+    <meta charset="utf-8">
+        <title>Find your vehicle</title>
+        
+        
+    <div class="sidenav">
+        
+        <a href="vehiclecomparsion.html">Home</a>
+        
+        <button class="dropdown-btn">Pick type of vehicle:
+          <i class="select"></i> </button>
+            <div class="dropdown-container">
+                <a href="cars.html">Cars</a>
+                <a href="motorcycles.html">Mororcycles</a>
+                <a href="bikes.html">Bikes</a>
+                
+              </div>
+            <div>
+            <a href="#contact">Contact</a>
+            <a href="#about us">About us</a>
+          </div>
+    </div>
+       
+
+      <script>
+        
+        
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+        
+      
+      </script>
+    </head>
+    <body>
+    
+    </body>
+    </html>

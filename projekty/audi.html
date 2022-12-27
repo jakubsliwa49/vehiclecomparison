@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <form name="type" id="type" action="/1.php">
+            Model: <select name="model" id="model">
+                
+                <option value="A1" selected="selected">A1</option>
+                <option value="A2" selected="selected">A2</option>
+                <option value="A3" selected="selected">A3</option>
+                <option value="A4" selected="selected">A4</option>
+                <option value="A5" selected="selected">A5</option>
+                <option value="A6" selected="selected">A6</option>
+                <option value="A7" selected="selected">A7</option>
+                <option value="A8" selected="selected">A8</option>
+                <option value="R8" selected="selected">R8</option>
+                <option value="RS2" selected="selected">RS2</option>
+                <option value="RS3" selected="selected">RS3</option>
+                <option value="RS4" selected="selected">RS4</option>
+                <option value="RS5" selected="selected">RS5</option>
+                <option value="RS6" selected="selected">RS6</option>
+                <option value="RS7" selected="selected">RS7</option>
+                <option value="" selected="selected"></option>
+            </select>
+            <br>
+            <br>
+
+            Production year: <select name="year" id="year">
+                <option value="" selected="selected">2022</option>
+                <option value="" selected="selected">2021</option>
+                <option value="" selected="selected">2020</option>
+                <option value="" selected="selected">2019</option>
+                <option value="" selected="selected">2018</option>
+                <option value="" selected="selected">2017</option>
+                <option value="" selected="selected">2016</option>
+                <option value="" selected="selected">2015</option>
+                <option value="" selected="selected">2014</option>
+                <option value="" selected="selected">2013</option>
+                <option value="" selected="selected">2012</option>
+                <option value="" selected="selected">2011</option>
+                <option value="" selected="selected">2010</option>
+                <option value="" selected="selected">2009</option>
+                <option value="" selected="selected">2008</option>
+                <option value="" selected="selected">2007</option>
+                <option value="" selected="selected">2006</option>
+                <option value="" selected="selected">2005</option>
+                <option value="" selected="selected">2004</option>
+                <option value="" selected="selected">2003</option>
+                <option value="" selected="selected">2002</option>
+                <option value="" selected="selected">2001</option>
+                <option value="" selected="selected">2000</option>
+                <option value="" selected="selected"></option>
+
+            </select>
+            <br>
+            <br>
+            Engin: <select name="engin" id="engin">
+                <option value="TFSI" selected="selected">TFSI</option>
+                <option value="TDI" selected="selected">TDI</option>
+                <option value="" selected="selected"></option>
+                
+            </select>
+            <br>
+            <br>
+
+            
+            Color: <select name="color" id="color">
+                <option value="red" selected="selected">red</option>
+                <option value="green" selected="selected">green</option>
+                <option value="blue" selected="selected">blue</option>
+                <option value="gray" selected="selected">gray</option>
+                <option value="white" selected="selected">white</option>
+                <option value="black" selected="selected">black</option>
+                <option value="" selected="selected"></option>
+
+               </select>
+               <br>
+               <br>
+               <button class="button">Search for vehicle:
+                <i class="select"></i> </button>
+                
+                 
+        </form>
+        <br>
+        
+        <script>
+           
+            
+window.onload = function() {
+  var modelSel = document.getElementById("model");
+  var yearSel = document.getElementById("year");
+  var enginSel = document.getElementById("engin");
+  var colorSel =document.getElementById("color");
+  document.write("Choosen car:"+ modelSel + yearSel + enginSel + colorSel);
+}
+    switch (enginSel) 
+    {
+        case "TFSI":
+            return "TFSI";
+    }
+    
+        
+        </script>
+    </head>
+</html>
